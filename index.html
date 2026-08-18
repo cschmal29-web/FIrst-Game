@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Pitch Soccer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="arcade">
+    <header>
+      <h1>PIXEL PITCH</h1>
+      <p>ONE-ON-ONE ARCADE SOCCER</p>
+    </header>
+
+    <section class="game-frame">
+      <canvas id="gameCanvas" width="960" height="540">
+        Your browser does not support HTML canvas.
+      </canvas>
+      <div class="scanlines"></div>
+    </section>
+
+    <section class="controls">
+      <div>
+        <span class="label">PLAYER</span>
+        <span>WASD or Arrow Keys — Move</span>
+      </div>
+
+      <div>
+        <span class="label">KICK</span>
+        <span>Space — Kick / Start</span>
+      </div>
+
+      <div>
+        <span class="label">WIN</span>
+        <span>First to 7 goals</span>
+      </div>
+    </section>
+
+    <button id="soundToggle" type="button">SOUND: ON</button>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
